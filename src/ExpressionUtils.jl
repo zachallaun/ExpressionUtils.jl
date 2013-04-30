@@ -7,7 +7,7 @@ immutable Remove end
 # Recursively walk an Expr, applying a function to each subexpr and leaf to
 # build up a new Expr. If the function returns an Expr, that Expr will be
 # walked as well. If the function returns the singleton value
-# Expressions.Remove, that node will be removed.
+# ExpressionUtils.Remove, that node will be removed.
 #
 walk(f, leaf) = f(leaf)
 function walk(f, ex::Expr)
